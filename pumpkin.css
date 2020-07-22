@@ -1,0 +1,185 @@
+html,
+body {
+  background: -webkit-radial-gradient(center, ellipse cover,  gray 0%,gray 50%, black 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex: auto;  
+}
+
+.pumpkin {
+  border-radius: 50%/70%;
+  background-color: coral;
+  width: 300px;
+  height: 200px;
+  justify-content: center;
+  overflow: hidden;
+  display: inherit;
+  position: relative;
+  animation: float 3s infinite;
+}
+
+.pumpkin > div {
+  position: absolute;
+}
+
+.line {
+  width: 200px;
+  height: 104%;
+  border-radius: 60%/90%;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  top: -4px;
+  z-index: 100000;
+}
+
+.line2 {
+  width: 100px;
+  height: 104%;
+  border-radius: 60%/90%;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  top: -4px;
+  z-index: 100000;
+}
+
+.pumpkin-eye {
+  /* width: 4em; */
+  /* height: 4em; */
+  /* background-color: yellow; */
+  border-left: 2em solid transparent;
+  border-top: 4em solid black;
+  border-right: 2em solid transparent;
+  left: 20%;
+  top: 20%;
+}
+
+.pumpkin-eye2 {
+  /* width: 4em; */
+  /* height: 4em; */
+  border-left: 2em solid transparent;
+  border-top: 4em solid black;
+  border-right: 2em solid transparent;
+  right: 20%;
+  top: 20%;
+}
+
+.mouse { 
+  bottom: 10%;
+  width: 55%;
+  height: 40%;
+  /* background-color: black; */
+  border-bottom: 1.8em black solid; 
+  border-radius: 50%/70%;
+  z-index: 0;
+}
+
+.teeth {
+  bottom: 10%;
+  left: 56.8%;
+  z-index: auto;
+  border-left: 0.7em solid transparent;
+  border-bottom: 1.4em solid coral;
+  border-right: 0.7em solid transparent;
+}
+
+.teeth2 {
+  bottom: 15%;
+  right: 40%;
+  z-index: auto;
+  border-left: 0.7em solid transparent;
+  border-top: 1.4em solid coral;
+  border-right: 0.7em solid transparent;
+}
+
+.teeth3 {
+  bottom: 15%;
+  left: 60%;
+  z-index: auto;
+  border-left: 0.8em solid transparent;
+  border-top: 1.6em solid coral;
+  border-right: 0.8em solid transparent;
+}
+
+.teeth4 {
+  bottom: 15%;
+  right: 48%;
+  z-index: auto;
+  border-left: 0.8em solid transparent;
+  border-top: 1.6em solid coral;
+  border-right: 0.8em solid transparent;
+}
+
+.teeth5 {
+  bottom: 15%;
+  right: 56%;
+  z-index: auto;
+  border-left: 0.8em solid transparent;
+  border-top: 1.6em solid coral;
+  border-right: 0.8em solid transparent;
+}
+
+.teeth6 {
+  bottom: 10%;
+  left: 48%;
+  z-index: auto;
+  border-left: 0.7em solid transparent;
+  border-bottom: 1.4em solid coral;
+  border-right: 0.7em solid transparent;
+}
+
+.teeth7 {
+  bottom: 18%;
+  right: 64%;
+  z-index: auto;
+  border-left: 0.8em solid transparent;
+  border-top: 1.6em solid coral;
+  border-right: 0.8em solid transparent;
+}
+
+.teeth8 {
+  bottom: 10%;
+  left: 40%;
+  z-index: auto;
+  border-left: 0.7em solid transparent;
+  border-bottom: 1.4em solid coral;
+  border-right: 0.7em solid transparent;
+}
+
+.teeth9 {
+  bottom: 12%;
+  right: 28%;
+  z-index: auto;
+  border-left: 0.7em solid transparent;
+  border-bottom: 1.4em solid coral;
+  border-right: 0.7em solid transparent;
+}
+
+.teeth10 {
+  bottom: 10%;
+  left: 31%;
+  z-index: auto;
+  border-left: 0.8em solid transparent;
+  border-bottom: 1.6em solid coral;
+  border-right: 0.8em solid transparent;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
